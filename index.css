@@ -19,9 +19,50 @@ body>div
 {
     grid-column: 1/2;
     grid-row: 1/3;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
 }
+
+.Sidebar > div:nth-child(1)
+{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.Sidebar > div:nth-child(1)>div
+{
+    border: 1px solid black;
+}
+
+
+
+
 
 .Name
 {
     grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.Name >div
+{
+    border: 1px solid black;
+}
+
+.Projects
+{
+    display: grid;
+    grid-template-columns: repeat(1,2fr) repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.Projects>div
+{
+    border: 1px solid black;
+}
+
+.Projects>div:nth-child(1)
+{
+    grid-row: 1/3;
 }
