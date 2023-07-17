@@ -12,11 +12,11 @@ body
     grid-template-columns: repeat(1,1fr) repeat(1,4fr);
     grid-template-rows: repeat(1,1fr) repeat(1,4fr);
     gap: 2rem;
-    background-color:;
+    background-color: #76C893;
 }
 body>div
 {
-    border: 1px solid black;
+    border: 1px solid #184E77;
 }
 
 .Sidebar
@@ -25,10 +25,11 @@ body>div
     grid-row: 1/3;
     display: grid;
     grid-template-rows: repeat(1,2fr) repeat(1,1fr);
-    background-color: #f72585;
+    background-color: #52B69A;
     border-radius: 2rem;
     font-weight: 600;
     font-size: large;
+    border: 2px solid #184E77;
 }
 
 .Sidebar >div
@@ -49,25 +50,37 @@ body>div
 }
 
 
+.Sidebar > div>div
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.Sidebar>div>div:nth-child(1)
+{
+    justify-self: center;
+}
+
 .Name
 {
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(1,2fr) repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    border: 1px solid white;
+    border: 1px solid #76C893;
 }
 
 input
 {
-    background-color: #b5179e;
+    background-color: #34A0A4;
     border-radius: 12px;
 }
 .Name >div
 {
-    background-color: #f72585;
-    border: 1px solid black;
+    background-color: #52B69A;
+    border: 2px solid #184E77;
     border-radius: 2rem;
 }
 
@@ -84,23 +97,44 @@ input
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
+.Name> div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>img
+{
+    border: 2px solid #184E77;
+    border-radius: 2rem;
+}
 .Name > div:nth-child(2)
 {
     grid-row:1/3;
     grid-column: 2/3;
+    display:  grid;
+    background-color: #76C893;
+    border: 1px solid #76C893;
 }
+
+.Name > div:nth-child(2)>div
+{
+    place-self: center;
+}
+
 
 .Name > div:nth-child(3)
 {
     grid-column:1/2;
     text-align: center;
+    font-size: x-large;
+    font-weight: 600;
 }
 
 button
 {
-    
+    background-color: #52B69A;
+    border-radius: 2rem;
+    height:4rem;
+    width:6rem;
+    border: 2px solid #184E77;
 }
 
 .Projects
@@ -108,16 +142,51 @@ button
     display: grid;
     grid-template-columns: repeat(1,2fr) repeat(1,1fr);
     grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+    border: 1px solid #76C893;
 }
 
-.Projects>div
-{
-    border: 1px solid black;
-}
 
 .Projects>div:nth-child(1)
 {
     grid-row: 1/3;
+    border: 2px solid #184E77;
+    border-radius: 2rem;
+    background-color: #52B69A;
+
+}
+
+.Projects>div:nth-child(2)
+{
+    padding: 1rem;
+    border: 2px solid #184E77;
+    border-radius: 2rem;
+    background-color: #52B69A;
+}
+
+.Projects>div:nth-child(2)>div
+{
+    font-size: large;
+    font-weight: 600;
+}
+
+.Projects>div:nth-child(2)>p:nth-child(even)
+{
+    
+    font-size: large;
+    font-weight: 600;
+}
+
+.Projects>div:nth-child(2)>p
+{
+    border-bottom: 1px solid black;
+}
+
+.Projects>div:nth-child(3)
+{
+    border: 2px solid #184E77;
+    border-radius: 2rem;
+    background-color: #52B69A;
 }
 
 img
