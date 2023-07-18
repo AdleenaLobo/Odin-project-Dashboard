@@ -31,6 +31,7 @@ body>div
     font-weight: 600;
     font-size: large;
     border: 2px solid #184E77;
+    height: 100%;
 }
 
 .Sidebar >div
@@ -161,6 +162,7 @@ button
     grid-template-rows: repeat(2,1fr);
     gap: 2rem;
     border: 1px solid #76C893;
+    height: 100%;
 }
 
 
@@ -173,7 +175,7 @@ button
     background-color: #52B69A;
     gap: 1rem;
     display: grid;
-    grid-template-rows: repeat(1, 1fr) repeat(1,6fr);
+    grid-template-rows: repeat(1, 0.25fr) repeat(1,6fr);
 
 }
 
@@ -182,7 +184,18 @@ button
     grid-column: 1/3;
     background-color: #52B69A;
     border: 1px solid #52B69A;
+    font-weight: 600;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+}/*tried to put svg*/
+.Projects>div:nth-child(1)>div>div:nth-child(2)>rect
+{
+    height: 2px;
+    width: 2px;
+    background-color: #184E77;
 }
 
 .Projects>div:nth-child(1)>div:nth-child(2)
@@ -202,9 +215,18 @@ button
 
 .Projects>div:nth-child(1)>div:nth-child(2)>div>div>img
 {
-    height: 6rem;
-    width: 12rem;
-    padding-left: 2rem;
+    height: 12rem;
+    width: 15rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border: 2px solid #184E77;
+    box-shadow: 2px 2px 2px #184E77; 
+}
+
+.Projects>div:nth-child(1)>div:nth-child(2)>div>div>div
+{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 .Projects>div:nth-child(1)>div:nth-child(2)>div>div:nth-child(2)
