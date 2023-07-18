@@ -1,4 +1,5 @@
 /*https://coolors.co/palette/7400b8-6930c3-5e60ce-5390d9-4ea8de-48bfe3-56cfe1-64dfdf-72efdd-80ffdb*/
+/*https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77*/
 /*color combination*/
 
 body , html
@@ -36,6 +37,13 @@ body>div
 {
     display: grid;
     place-content: center;
+}
+
+.Sidebar>div>div:hover
+{
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: #99D98C;
 }
 
 .Sidebar > div:nth-child(1)
@@ -90,6 +98,15 @@ input
     justify-content:space-around;
     align-items: center;
     gap: 1rem;
+}
+
+.Name>div:nth-child(1)>div:nth-child(2)> div:nth-child(2)>img
+{
+    height: 3rem;
+    width:  3rem;
+    border: 2px solid #184E77;
+    border-radius: 2rem;
+    background-color: #99D98C;   
 }
 
 .Name>div:nth-child(1)>div
@@ -187,11 +204,39 @@ button
     border: 2px solid #184E77;
     border-radius: 2rem;
     background-color: #52B69A;
+    display: grid;
+    grid-template-columns: repeat(1,1fr) repeat(1,2fr);
+    grid-template-rows: repeat(5,1fr);
+    padding:2rem;
 }
+.Projects>div:nth-child(3)>p
+{
+    grid-column: 1/3;
+    font-weight: 600;
+    font-size: large;
+    border-bottom: 2px solid black;
+}
+
+.Projects>div:nth-child(3)>div
+{
+    border-bottom: 1px solid black;
+    justify-self: start;
+    align-self: center;
+}
+
+.Projects>div:nth-child(3)>img
+{
+    height: 3rem;
+    width:  3rem;
+    border: 2px solid #184E77;
+    border-radius: 2rem;
+    background-color: #99D98C;
+}
+
 
 img
 {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     color: #80ffdb;
 }
