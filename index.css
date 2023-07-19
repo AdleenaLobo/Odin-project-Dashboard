@@ -47,6 +47,14 @@ body>div
     background-color: #99D98C;
 }
 
+.Sidebar>div>.dashboard:hover , .Sidebar>div>.empty:hover
+{
+    border: 1px solid #52B69A;
+    border-bottom: 1px solid black;
+    border-radius: 0%;
+    background-color: #52B69A;
+}
+
 .Sidebar > div:nth-child(1)
 {
     display: grid;
@@ -190,13 +198,8 @@ button
     justify-content: space-between;
     align-items: center;
     
-}/*tried to put svg*/
-.Projects>div:nth-child(1)>div>div:nth-child(2)>rect
-{
-    height: 2px;
-    width: 2px;
-    background-color: #184E77;
 }
+
 
 .Projects>div:nth-child(1)>div:nth-child(2)
 {
