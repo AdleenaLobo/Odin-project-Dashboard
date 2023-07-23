@@ -1,25 +1,26 @@
 let body = document.querySelector('body');
+let html = document.querySelector('html');
+let c=document.createElement('div');
+c.classList.add('Added');
+body.appendChild(c);
 First();
-setTimeout(Second, 5000);
+setTimeout(Second, 7000);
 
  function First()
  {
-    body.classList.add('.Added');
-    for(let i=0 ; i<3; i++)
+    for(let i=0 ; i<4; i++)
     {
         
     let i =document.createElement('div');
-    i.classList.add('.only');
-    body.appendChild(i);
+    i.classList.add('only');
+    c.appendChild(i);
     }
 
  }
 
  function Second()
  {
-    body.classList.remove('.Added');
-    for(let i=0 ; i<3; i++)
-    {
-    body.removeChild('div');
-    }
+   body.removeChild(c);
+    c.classList.remove('Added');
+   
  }

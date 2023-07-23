@@ -12,6 +12,12 @@
     src: url(font/Pangolin/Pangolin-Regular.ttf);
 }
 
+:root
+{
+    --customHeight : 100%;
+    --customWidth : 100%;
+}
+
 body , html
 {
     height: 100%;
@@ -25,7 +31,9 @@ body
     gap: 2rem;
     background-color: #76C893;
     font-family: MyStyle;
+    position: relative;
 }
+
 
 .Added
 {
@@ -33,6 +41,9 @@ body
     border: 2px solid #184E77;
     border-radius: 2rem;
     background-color: #76C893;
+    position: absolute;
+    width:var(--customWidth);
+    height: var(--customHeight);
 
 }
 
@@ -66,6 +77,7 @@ body>div
     border: 1px solid black;
     border-radius: 2rem;
     background-color: #99D98C;
+    cursor: pointer;
 }
 
 .Sidebar>div>.dashboard:hover , .Sidebar>div>.empty:hover
@@ -74,6 +86,7 @@ body>div
     border-bottom: 1px solid black;
     border-radius: 0%;
     background-color: #52B69A;
+    cursor: default;
 }
 
 .Sidebar > div:nth-child(1)
@@ -93,6 +106,7 @@ body>div
     display: flex;
     justify-content: start;
     align-items: center;
+
 }
 
 .Sidebar>div>div:nth-child(1)
@@ -191,6 +205,7 @@ button
 button:hover
 {
     box-shadow: inset 1px 1px #52B69A ;
+    cursor: pointer;
 }
 
 .Projects
@@ -237,6 +252,7 @@ button:hover
     gap: 2px;
     height: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 .Added>.only
@@ -245,6 +261,7 @@ button:hover
     width: 2rem;
     background-color: #184E77;
     border-radius: 2rem;
+
 }
 
 .Added>.only
@@ -259,11 +276,14 @@ button:hover
 }
 
 .Added>.only:nth-child(2){
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .Added>.only:nth-child(3){
-    animation-delay: 3s;
+    animation-delay: 2s;
+}
+.Added>.only:nth-child(4){
+    animation-delay: 2.5s;
 }
 
 
