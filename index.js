@@ -1,4 +1,4 @@
-let body = document.querySelector('body');
+let body = document.querySelector('.wrapper');
 let html = document.querySelector('html');
 let c=document.createElement('div');
 c.classList.add('Added');

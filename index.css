@@ -21,9 +21,11 @@
 body , html
 {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-body
+body>div:first-child
 {
     display: grid;
     grid-template-columns: repeat(1,1fr) repeat(1,4fr);
@@ -43,11 +45,12 @@ body
     background-color: #76C893;
     position: absolute;
     width:var(--customWidth);
-    height: var(--customHeight);
+    top: 0;
+    bottom: 0;
 
 }
 
-body>div
+body>div>div
 {
     border: 1px solid #184E77;
 }
@@ -118,10 +121,11 @@ body>div
 {
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: repeat(1,2fr) repeat(1, 1fr);
+    grid-template-rows: repeat(1,1fr) repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     border: 1px solid #76C893;
+    padding: 1rem;
 }
 
 input
@@ -152,6 +156,7 @@ input
     border-radius: 2rem;
     background-color: #99D98C;   
 }
+
 
 .Name>div:nth-child(1)>div
 {
@@ -184,7 +189,9 @@ input
 .Name > div:nth-child(3)
 {
     grid-column:1/2;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: x-large;
     font-weight: 600;
     font-family: NorseBold;
@@ -251,7 +258,8 @@ button:hover
     display: flex;
     gap: 2px;
     height: 100%;
-    align-items: center;
+    padding-top: 25%;
+    align-items: baseline;
     justify-content: center;
 }
 
